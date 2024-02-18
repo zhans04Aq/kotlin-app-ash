@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_cyan"
+    android:orientation="vertical"
+    android:padding="25dp"
+    android:layout_gravity="center"
+    tools:context=".registr_student">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello Student!"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/background_cyan"
+        android:textColorHint="#FFFFFF"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/background_cyan"
+            android:hint="Name"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/background_cyan"
+        android:textColorHint="#FFFFFF"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/background_cyan"
+            android:hint="Email"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone_number"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/background_cyan"
+        android:textColorHint="#FFFFFF"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/background_cyan"
+            android:hint="Phone Number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_number"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/background_cyan"
+        android:textColorHint="#FFFFFF"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/background_cyan"
+            android:hint="Password"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submitBtn"
+        android:layout_width="450px"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        style="@style/buttonStyle"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/reminderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitBtn"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="20dp">
+
+
+        <TextView
+            android:id="@+id/whiteText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Already have an Account?"
+            android:textColor="@color/white"
+            android:layout_gravity="end"
+            android:textAlignment="textEnd"
+            android:textSize="12dp"
+            android:layout_marginRight="1dp"/>
+
+        <TextView
+            android:id="@+id/greenText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Log in"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:textColor="#92E3A9"
+            android:layout_gravity="start"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:layout_weight="1"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:layout_gravity="start"
+        android:textSize="22dp"
+        android:layout_below="@id/reminderText"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/loginWith"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login with"
+        android:layout_weight="1"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:layout_below="@id/forgotPassword"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/googleBtn"
+        android:layout_width="450px"
+        android:layout_height="wrap_content"
+        android:text="Login with Google"
+        style="@style/buttonStyle"
+        android:layout_below="@id/loginWith"
+        android:layout_centerHorizontal="true"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ApMoodle"
+        android:layout_width="450px"
+        android:layout_height="wrap_content"
+        android:text="Login with ApMoodle"
+        style="@style/buttonStyle"
+        android:layout_below="@id/googleBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+
+</RelativeLayout>

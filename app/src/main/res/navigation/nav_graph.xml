@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainActivity">
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.myapplication.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/whoPage"
+        android:name="com.example.myapplication.WhoPage"
+        android:label="who_are_you_page"
+        tools:layout="@layout/who_are_you_page" />
+    <activity
+        android:id="@+id/login2"
+        android:name="com.example.myapplication.login"
+        android:label="log_in_page"
+        tools:layout="@layout/log_in_page" />
+    <activity
+        android:id="@+id/forgot_password"
+        android:name="com.example.myapplication.forgot_password"
+        android:label="forgot_password"
+        tools:layout="@layout/forgot_password" />
+    <activity
+        android:id="@+id/verification"
+        android:name="com.example.myapplication.verification"
+        android:label="verification_page"
+        tools:layout="@layout/verification_page" />
+    <activity
+        android:id="@+id/reset_password"
+        android:name="com.example.myapplication.reset_password"
+        android:label="reset_password_page"
+        tools:layout="@layout/reset_password_page" />
+    <activity
+        android:id="@+id/registr_hunter"
+        android:name="com.example.myapplication.registr_hunter"
+        android:label="registation_hunter"
+        tools:layout="@layout/registation_hunter" />
+    <activity
+        android:id="@+id/registr_student"
+        android:name="com.example.myapplication.registr_student"
+        android:label="registration_student"
+        tools:layout="@layout/registration_student" />
+</navigation>

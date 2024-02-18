@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name" translatable="false">ASH</string>
+    <string-array name="groups">
+        <item>IS</item>
+        <item>SD</item>
+        <item>AAM</item>
+        <item>CTP</item>
+        <item>OAGD</item>
+        <item>EOGF</item>
+        <item>PS</item>
+        <item>MECH</item>
+        <item>TPOG</item>
+    </string-array>
+    
+    <string-array name="year">
+        <item>N-20</item>
+        <item>N-21</item>
+        <item>N-22</item>
+        <item>N-23</item>
+    </string-array>
+</resources>

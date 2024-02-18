@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:padding="25dp"
     android:layout_gravity="center"
-    tools:context=".forgot_password">
+    tools:context=".additional_info_student">
 
     <ImageView
         android:id="@+id/backArrow"

@@ -44,4 +44,19 @@
         android:name="com.example.myapplication.registr_student"
         android:label="registration_student"
         tools:layout="@layout/registration_student" />
+    <activity
+        android:id="@+id/additional_info_hunter"
+        android:name="com.example.myapplication.additional_info_hunter"
+        android:label="additional_info_hunter"
+        tools:layout="@layout/additional_info_hunter" />
+    <activity
+        android:id="@+id/additional_info_student"
+        android:name="com.example.myapplication.additional_info_student"
+        android:label="additional_info_student"
+        tools:layout="@layout/additional_info_student" />
+    <activity
+        android:id="@+id/student_profile"
+        android:name="com.example.myapplication.student_profile"
+        android:label="student_profile"
+        tools:layout="@layout/student_profile" />
 </navigation>

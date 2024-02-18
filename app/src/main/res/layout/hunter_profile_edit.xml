@@ -20,7 +20,7 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/student_banner"
+            app:srcCompat="@drawable/hunter_banner"
             />
 
         <ImageView
@@ -29,8 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginTop="110dp"
-            app:srcCompat="@drawable/student_pp"
-            />
+            app:srcCompat="@drawable/hunter_pp" />
 
         <ImageView
             android:id="@+id/imageView10"
@@ -80,7 +79,7 @@
         android:id="@+id/studentName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="John"
+        android:text="Steve"
         android:layout_below="@id/myRelativeLayout1"
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
@@ -100,25 +99,13 @@
         android:textSize="28dp"
         />
 
-    <TextView
-        android:id="@+id/studentGroup"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PS 1-21"
-        android:layout_below="@id/status"
-        android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
-        android:textSize="15dp"
-        />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/studentGroup"
+        android:layout_below="@id/status"
         android:padding="10dp"
         android:id="@+id/myRelativeLayout2"
-
         >
 
         <LinearLayout
@@ -160,16 +147,20 @@
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="55dp"
             android:layout_below="@id/myLinearLayout3"
-            android:text="Lorem ipsum dolor sit amet consectetur. Ac viverra ac tristique pellentesque. Amet pulvinar nisi in sit ac eget consectetur ornare. Odio pharetra vulputate pharetra eget ultricies non sagittis. "
-            android:textColor="@color/white"
-            android:textSize="14dp"
             android:layout_marginLeft="25dp"
-            />
+            android:layout_marginTop="5dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="bac"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
     </RelativeLayout>
 
     <RelativeLayout
@@ -200,7 +191,7 @@
                 android:id="@+id/experienceTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Experience / Portfolio"
+                android:text="Organization"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:layout_marginVertical="1dp"
@@ -225,72 +216,29 @@
                 />
 
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/experienceText"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="25dp"
             android:layout_below="@id/myLinearLayout4"
-            android:text="Internship: NCOC, TCO"
-            android:textColor="@color/white"
-            android:textSize="14dp"
-            android:layout_marginLeft="45dp"
-            />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/myRelativeLayout3"
-        android:padding="10dp"
-        android:id="@+id/myRelativeLayout5"
-
-        >
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/myLinearLayout5"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
             >
 
-
-            <ImageView
-                android:id="@+id/cv"
-                android:layout_width="wrap_content"
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/cv_icon"
-
+                android:background="bac"
                 />
+        </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:id="@+id/cvTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CV / Resume"
-                android:textColor="@color/white"
-                android:layout_marginLeft="5dp"
-                android:textSize="20dp"
-                android:layout_marginVertical="1dp"
-                />
-
-            <ImageView
-                android:id="@+id/uploadIcon2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/upload_icon"
-                android:layout_marginVertical="5dp"
-                android:layout_marginLeft="5dp"
-                />
-
-        </LinearLayout>
     </RelativeLayout>
+
 
     <RelativeLayout
         android:id="@+id/myRelativeLayout6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/myRelativeLayout3"
-        android:layout_marginTop="50dp"
-
         android:padding="10dp">
 
         <LinearLayout
@@ -317,26 +265,24 @@
                 android:textColor="@color/white"
                 android:textSize="20dp" />
 
-            <ImageView
-                android:id="@+id/editIcon3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginVertical="5dp"
-                android:layout_marginLeft="5dp"
-                app:srcCompat="@drawable/edit_icon" />
-
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/languageText"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
+            android:layout_height="25dp"
             android:layout_below="@id/myLinearLayout6"
-            android:layout_marginLeft="30dp"
-            android:text="English, Russian, Kazakh"
-            android:textColor="@color/white"
-            android:textSize="14dp" />
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="bac"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
     </RelativeLayout>
 
 
